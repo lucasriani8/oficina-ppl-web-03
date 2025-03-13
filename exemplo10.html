@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 10</title>
+    <style>
+        *{
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bloco{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            width: 9rem;
+            height: 3rem;
+            padding: 1rem;
+            border-radius: .5rem;
+            margin: 1rem;
+        }
+        .container{
+            margin: 1rem;
+            padding: 1rem;
+            border:1px solid grey;
+            box-shadow: .5rem .5rem .3rem .01rem grey;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <script>
+        /*
+        estrutura sequencial
+        comando de saida
+        variavel
+        templete string
+        */
+       var num
+       num=parseInt(prompt("Informe um numero: "));
+
+       
+       document.write(` <div class="bloco">${num}^2=${Math.pow(num,2)}</div>`);
+       document.write(` <div class="bloco">log 2 (${num})=${Math.log2(num).toFixed(2)}</div>`);
+       document.write(` <div class="bloco">raiz${num}=${Math.sqrt(num).toFixed(2)}</div>`);
+       document.write(` <div class="bloco">log 10(${num})=${Math.log10(num).toFixed(2)}</div>`);
+       document.write(` <div class="bloco">log E(e)=${Math.log(Math.E).toFixed(2)}</div>`);
+       document.write(` <div class="bloco">log E(e)=${Math.log(Math.E).toFixed(2)}</div>`);
+       document.write(` <div class="bloco">log E(e)=${Math.log(Math.E).toFixed(2)}</div>`);
+
+       
+       
+        </script>
+    </div> <!--fechamento do container-->
+</body>
+</html>
